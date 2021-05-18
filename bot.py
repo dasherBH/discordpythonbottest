@@ -1,3 +1,4 @@
+import os
 import discord 
 from discord.ext import commands
 
@@ -8,4 +9,4 @@ async def on_ready():
   print("Bot Is Ready")
   
   
-bot.run(DISCORD_TOKEN)
+bot.run(os.environ['DISCORD_TOKEN'])
